@@ -21,7 +21,7 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 ### Details
 - Mocks for these pages are provided in Figma. You should have been sent an invite to access them, if not let us know.
   - [Figma Mocks](https://www.figma.com/file/wr1seCuhlRtoFGuz1iWgyF/Frontend-Coding-Mocks?type=design&node-id=0%3A1&mode=design&t=Uw1av3TypDUDcLAd-1)
-  - We are looking for attention to detail when implementing these.
+  - We are looking for **attention to detail** when implementing these.
 - There is also a logo and an icon provided (SVGs) included in this repo.
 - Pexels API Info
   - Api Key: `Mz0iC21IFLz9HuN8ypIbJ54l8OuGnpW2IsVoQrYBEyagQXt1YeBEA7H0`
@@ -31,9 +31,10 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 - Make the "Sign in" page functional. However, you can spoof authentication any way you'd like (eg. save a value to local storage, etc).
 - Make "All photos" require authentication to access.
 - Only need to show 10 photos on the "All photos" page. Paging is not required.
+- Photos should be like/unlikeable.
 
 ### Final Thoughts
 
-Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app.
+Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app. We really just want to make sure you understand core React concepts (ie. context providers, memoization, callbacks, etc).
 
 **Any questions**, just let us know. Send emails to <a href="mailto:james.crain@movewithclever.com">james.crain@movewithclever.com</a>. Good luck!
