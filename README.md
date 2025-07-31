@@ -5,10 +5,10 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 
 ### Requirements
 - Create a small web app using React and Typescript.
-- Up to you how you scaffold it (eg. Next, Vite, even CRA).
+- Our preference is with NextJs.
 - However, please use either `npm` or `yarn`.
 - It will utilize the Pexels API to pull in some photos. Details below.
-- We'd like you to create two (mobile responsive) pages:
+- We'd like you to create two (mobile **responsive**) pages:
   1. Sign in
   2. All photos
 - You can fork this repo and commit your code there. Once done, please add the following users as members so we can review:
@@ -21,7 +21,7 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 ### Details
 - Mocks for these pages are provided in Figma. You should have been sent an invite to access them, if not let us know.
   - [Figma Mocks](https://www.figma.com/file/wr1seCuhlRtoFGuz1iWgyF/Frontend-Coding-Mocks?type=design&node-id=0%3A1&mode=design&t=Uw1av3TypDUDcLAd-1)
-  - We are looking for **attention to detail** when implementing these.
+  - We are looking for **attention to detail** when implementing these. If a font size is 14px in the mocks, please make sure it renders that way in your app.
 - There is also a logo and an icon provided (SVGs) included in this repo.
 - Pexels API Info
   - Api Key: `Mz0iC21IFLz9HuN8ypIbJ54l8OuGnpW2IsVoQrYBEyagQXt1YeBEA7H0`
@@ -32,9 +32,11 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 - Make "All photos" require authentication to access.
 - Only need to show 10 photos on the "All photos" page. Paging is not required.
 - Photos should be like/unlikeable.
+- We want to see that you have a basic understanding of React concepts (eg. contexts, callbacks, etc.).
+- We also want to see you know how to write tests. Nothing fancy, just the basics are fine.
 
 ### Final Thoughts
 
-Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app. We really just want to make sure you understand core React concepts (ie. context providers, memoization, callbacks, etc).
+Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app.
 
 **Any questions**, just let us know. Send emails to <a href="mailto:james.crain@movewithclever.com">james.crain@movewithclever.com</a>. Good luck!
