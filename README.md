@@ -40,3 +40,14 @@ Thank you for taking the time to interview with Clever. This coding challenge is
 Remember, please don't spend too much time on this. In fact, save a little time and **add a section to the README** outlining what else you'd do differently to make this a production ready app.
 
 **Any questions**, just let us know. Send emails to <a href="mailto:james.crain@movewithclever.com">james.crain@movewithclever.com</a>. Good luck!
+
+## Submission notes
+
+### Additional features to make the app production-ready
+
+To make this app production ready, I would:
+
+1. Implement a complete authentication solution, integrating the app with a back-end and handling and saving a JWT token.
+2. Implement a pagination system for loading more photos.
+3. Improve loading states and user experience by using `<Suspense>` where appropriate and making use of Next.js's `loading.tsx` special files.
+4. Improve user experience by implementing hover, active and loading visual states for the "Sign In" button.
