@@ -43,6 +43,11 @@ Remember, please don't spend too much time on this. In fact, save a little time 
 
 ## Submission notes
 
+### Alterations
+
+1. The Figma mock specified that the height of the text content in the Photo component should be 16px. This caused letters such as `g` to have their bottom cut when clamping the `alt` content to fit into a single line. I opted for mantaining the height described in the mocks, even with the letter cutting, to mantain visual consistency between Figma and application.
+2. The padding for the mobile version is, respectively, 35px horizontally/36px vertically for the login page, and 34px horizontally/36px vertically for the all photos page. To keep consistency in user experience, I opted for keeping the padding as 34px horizontally/36px vertically for both pages.
+
 ### Additional features to make the app production-ready
 
 To make this app production ready, I would:
