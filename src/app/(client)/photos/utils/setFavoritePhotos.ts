@@ -11,6 +11,10 @@ export const setFavoritePhotos = ({
   photoId: string;
   action: FavoriteAction;
 }) => {
+  if (typeof localStorage === 'undefined') {
+    return;
+  }
+
   const favoritePhotosKey = FAVORITE_PHOTOS_KEY.replace('{_userId_}', userName);
   const currentFavorites = getFavoritePhotos(userName);
   if (action === FavoriteAction.ADD) {
