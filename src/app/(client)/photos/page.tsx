@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Photo as TPhoto } from "./types";
 import { Photo } from "./components/Photo";
+import { Suspense } from "react";
 
 export default async function PhotosPage() {
     try {
@@ -14,9 +15,11 @@ export default async function PhotosPage() {
             <div className="flex flex-col gap-[40px]">
                 <Header title="All photos" logoAlignment="start" />
                 <div className="flex flex-col gap-[12px]">
-                    {pexelPhotos.photos.map((photo: TPhoto) => (
-                        <Photo key={photo.id} photo={photo} />
-                    ))}
+                    <Suspense fallback={<div className="flex justify-center items-center">Loading...</div>}>
+                        {pexelPhotos.photos.map((photo: TPhoto) => (
+                            <Photo key={photo.id} photo={photo} />
+                        ))}
+                    </Suspense>
                 </div>
             </div>
         )
@@ -24,8 +27,8 @@ export default async function PhotosPage() {
         return (
             <div className="flex flex-col gap-[40px]">
                 <Header title="All photos" logoAlignment="start" />
-                <div className="flex flex-col gap-[12px]">
-                    <p>Error fetching photos</p>
+                <div>
+                    <p>Error fetching photos, please reload the page</p>
                 </div>
             </div>
         )

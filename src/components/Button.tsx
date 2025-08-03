@@ -4,7 +4,7 @@ export const Button = ({children, ...props}: ButtonHTMLAttributes<HTMLButtonElem
     children: React.ReactNode
 }) => {
     return(
-        <button className="bg-primary rounded-[8px] py-[13px] max-h-[44px] text-white font-bold cursor-pointer hover:bg-primary/80" {...props}>
+        <button className="bg-primary rounded-lg py-[13px] max-h-[44px] text-white font-bold cursor-pointer" {...props}>
             {children}
         </button>
     )

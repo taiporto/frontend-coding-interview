@@ -4,6 +4,7 @@ import { MdStar, MdStarBorder } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { Photo as TPhoto } from "../types"
 import Image from "next/image";
+import { Link } from "@/components/Link";
 
 export const Photo = ({
     photo
@@ -30,7 +31,7 @@ export const Photo = ({
                 </button>
                 <div className="flex gap-[12px] max-w-[219px]">
                     <div className="min-w-[75px] max-w-[75px] h-[75px] relative">
-                        <Image src={photo.src.medium} alt={photo.photographer} fill objectFit="cover" className="rounded-[8px]" />
+                        <Image src={photo.src.medium} alt={photo.photographer} fill objectFit="cover" className="rounded-lg" />
                     </div>
                     <div className="flex flex-col gap-[6px]">
 
@@ -43,7 +44,7 @@ export const Photo = ({
                     </div>
                 </div>
             </div>
-            <a href={photo.photographer_url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-[3px] text-xs text-primary"><Image src="/links.svg" alt="Portfolio" width={12} height={12} />Portfolio</a>
+            <Link href={photo.photographer_url} target="_blank" rel="noopener noreferrer" size="sm" className="flex items-center gap-[3px]"><Image src="/links.svg" alt="Portfolio" width={12} height={12} />Portfolio</Link>
         </div>
     )
 
