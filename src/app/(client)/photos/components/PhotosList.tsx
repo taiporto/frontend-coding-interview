@@ -24,7 +24,7 @@ export default async function PhotosList() {
                 </Suspense>
             </div>
         )
-    } catch (error) {
+    } catch (_) {
         return (
             <div className="flex flex-col gap-[12px]">
                 <div className="flex justify-center items-center">Error fetching photos, please reload the page</div>

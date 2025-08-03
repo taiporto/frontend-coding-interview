@@ -15,15 +15,15 @@ export const Photo = ({
 }: {
     photo: TPhoto
 }) => {
-   const { getUserName } = useAuthContext();
-   const userName = getUserName();
+    const { getUserName } = useAuthContext();
+    const userName = getUserName();
+    const initialFavoritePhotos = getFavoritePhotos(userName || '');
+    const [isFavorite, setIsFavorite] = useState(initialFavoritePhotos.has(photo.id.toString()));
 
    if(!userName) {
     return null;
    }
 
-    const initialFavoritePhotos = getFavoritePhotos(userName);
-    const [isFavorite, setIsFavorite] = useState(initialFavoritePhotos.has(photo.id.toString()));
 
     const handleFavoriteButtonClick = () => {
         if(isFavorite) {

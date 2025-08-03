@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, MockedFunction } from 'vitest';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import SignInPage from '../page';
 import { useAuthContext } from '@/context/AuthContext';
 import { redirect } from 'next/navigation';
