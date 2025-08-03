@@ -1,7 +1,7 @@
 "use client"
 
 import { MdStar, MdStarBorder } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Photo as TPhoto } from "../types"
 import Image from "next/image";
 import { Link } from "@/components/Link";
@@ -64,7 +64,7 @@ export const Photo = ({
                         <h2 className="font-bold text-sm h-[16px] line-clamp-1">{photo.photographer}</h2>
                         <p className="text-sm line-clamp-1 h-[16px]">{photo.alt}</p>
                         <div className="flex gap-[8px] items-center">
-                            <p className="text-sm h-[16px]">{photo.avg_color}</p>
+                            <span className="text-sm h-[16px] text-foreground-secondary flex items-center leading-none">{photo.avg_color}</span>
                             <div data-testid="avg-color-box" className="w-[12px] h-[12px]" style={{ backgroundColor: photo.avg_color }}></div>
                         </div>
                     </div>

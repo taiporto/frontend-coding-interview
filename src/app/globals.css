@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #111827;
+  --foreground-secondary: #374824;
   --primary: #0075EB;
   --secondary: #9CA3AF;
   --favorite: #FFD600;
@@ -13,6 +14,7 @@
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-favorite: var(--favorite);
