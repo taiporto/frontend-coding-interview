@@ -1,4 +1,4 @@
 export enum FieldNames {
-    USERNAME = 'username',
-    PASSWORD = 'password'
+  USERNAME = 'username',
+  PASSWORD = 'password',
 }

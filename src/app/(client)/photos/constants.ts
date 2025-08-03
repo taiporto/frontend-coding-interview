@@ -1,4 +1,4 @@
 export enum FavoriteAction {
-    ADD = 'add',
-    REMOVE = 'remove'
+  ADD = 'add',
+  REMOVE = 'remove',
 }

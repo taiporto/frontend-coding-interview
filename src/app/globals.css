@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #111827;
   --foreground-secondary: #374824;
-  --primary: #0075EB;
-  --secondary: #9CA3AF;
-  --favorite: #FFD600;
+  --primary: #0075eb;
+  --secondary: #9ca3af;
+  --favorite: #ffd600;
 }
 
 @theme {

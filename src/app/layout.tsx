@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import localFont from 'next/font/local'
-import "./globals.css";
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Clever Photos",
-  description: "Clever Photos is a photo sharing platform",
+  title: 'Clever Photos',
+  description: 'Clever Photos is a photo sharing platform',
 };
 
 const helvetica = localFont({
@@ -12,15 +12,15 @@ const helvetica = localFont({
     {
       path: '../../public/fonts/Helvetica-Bold.ttf',
       weight: '700',
-      style: 'bold'
+      style: 'bold',
     },
     {
       path: '../../public/fonts/Helvetica.ttf',
       weight: '400',
-      style: 'normal'
-    }
-  ]
-})
+      style: 'normal',
+    },
+  ],
+});
 
 export default function RootLayout({
   children,
@@ -29,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${helvetica.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${helvetica.className} antialiased`}>{children}</body>
     </html>
   );
 }
