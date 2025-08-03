@@ -44,7 +44,7 @@ export const Photo = ({
     }
 
     return (
-        <div className="flex w-full gap-[12px] items-start justify-between max-w-[500px]">
+        <div className="flex w-full items-start justify-between max-w-[500px]">
             <div className="flex">
                 <button className="flex cursor-pointer mr-[12px]" data-testid="favorite-button" onClick={handleFavoriteButtonClick}>
                     {
