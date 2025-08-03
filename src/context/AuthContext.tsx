@@ -6,12 +6,14 @@ type AuthContextType = {
     getIsLoggedIn: () => boolean | undefined;
     login: (username: string, password: string) => void;
     logout: () => void;
+    getUserName: () => string | undefined;
 }
 
 const AuthContext = createContext<AuthContextType>({
     getIsLoggedIn: () => false,
     login: () => {},
-    logout: () => {}
+    logout: () => {},
+    getUserName: () => undefined
 } as AuthContextType)
 
 export const AuthContextProvider = ({ children }: { children: React.ReactNode }) => {
@@ -31,9 +33,17 @@ export const AuthContextProvider = ({ children }: { children: React.ReactNode })
 
         return undefined;
     }
+
+    const getUserName = () => {
+        if(typeof localStorage !== 'undefined') {
+            return localStorage.getItem('CleverPhotos::username') || undefined;
+        }
+
+        return undefined;
+    }
     
     return (
-        <AuthContext.Provider value={{ getIsLoggedIn, login, logout }}>{children}</AuthContext.Provider>
+        <AuthContext.Provider value={{ getIsLoggedIn, login, logout, getUserName }}>{children}</AuthContext.Provider>
     )
 }
 
