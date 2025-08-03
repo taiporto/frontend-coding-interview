@@ -5,6 +5,7 @@
   --foreground: #111827;
   --primary: #0075EB;
   --secondary: #9CA3AF;
+  --favorite: #FFD600;
 }
 
 @theme {
@@ -14,6 +15,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-favorite: var(--favorite);
 }
 
 body {

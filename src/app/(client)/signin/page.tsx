@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/Button";
 import { FormControl } from "@/components/FormControl";
+import { Header } from "@/components/Header";
 import { useAuthContext } from "@/context/AuthContext";
 import Image from "next/image";
 import { redirect } from "next/navigation";
@@ -18,11 +19,8 @@ export default function SignInPage() {
         redirect('/');
     }
     return (
-        <div className="flex flex-col gap-[40px] w-[319px]">
-            <div className="flex flex-col gap-[24px] items-center">
-                <Image src="/logo.svg" alt="Clever Photos" width={75} height={75} />
-                <h1 className="font-bold text-xl h-[23px]">Sign in to your account</h1>
-            </div>
+        <div className="flex flex-col gap-[40px] w-[319px] md:my-auto">
+            <Header title="Sign in to your account" />
             <form onSubmit={handleSubmit} className="flex flex-col gap-[24px]">
                 <FormControl name="username" id="username" label="Username" type="text" />
                 <FormControl name="password" id="password" label="Password" type="password" />

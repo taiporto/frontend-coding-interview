@@ -3,12 +3,12 @@
 import { redirect } from "next/navigation";
 import { useAuthContext } from "../../context/AuthContext";
 
-export default function PhotosPage() {
+export default function MainPage() {
     const { getIsLoggedIn } = useAuthContext();
 
-    if (!getIsLoggedIn()) {
+    if (getIsLoggedIn() === false) {
         redirect('/signin');
     }
 
-    return <div>Photos</div>;
+    redirect('/photos');
 }
