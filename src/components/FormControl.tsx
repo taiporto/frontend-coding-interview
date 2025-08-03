@@ -5,12 +5,12 @@ export const FormControl = ({ label, error, ...props }: InputHTMLAttributes<HTML
     return (
         <div className="flex flex-col gap-[11px]">
             <div className="flex justify-between max-h-[16px]">
-                <label htmlFor={props.id} className={`text-sm font-bold ${error ? 'text-red-500' : ''}`}>{label}</label>
+                <label htmlFor={props.id} className={`text-sm font-bold`}>{label}</label>
                 {props.type === 'password' &&
                     <Link href="#" size="sm">Forgot password?</Link>
                 }
             </div>
-            <input aria-invalid={error} className={`border ${error ? 'border-red-500' : 'border-secondary'} rounded-lg px-[10px] py-[13px] max-h-[44px]`} {...props} />
+            <input aria-invalid={error} className="border border-secondary rounded-lg px-[10px] py-[13px] max-h-[44px]" {...props} />
         </div>
     )
 }
